@@ -17,8 +17,8 @@ public class Ship {
                 if (x + i >= field.getWidth() || field.getFields()[y][x + i] != 0) {
                     return false;
                 }
-                // Проверка соседней на наличие занятого пространства сверху, снизу, слева и справа
-                if (y > 0 && field.getFields()[y - 1][x + i] == 1) return false; //выше текущей
+                // Проверка соседней ячейки на наличие занятого пространства сверху, снизу, слева и справа
+                if (y > 0 && field.getFields()[y - 1][x + i] == 1) return false;
                 if (y < field.getHeight() - 1 && field.getFields()[y + 1][x + i] == 1) return false;
                 if (x + i > 0 && field.getFields()[y][x + i - 1] == 1) return false;
                 if (x + i < field.getWidth() - 1 && field.getFields()[y][x + i + 1] == 1) return false;

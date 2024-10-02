@@ -1,7 +1,6 @@
 import java.util.*;
 
 public class Player {
-    char[] letters = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
     public void play(Field field) {}
 
 }
